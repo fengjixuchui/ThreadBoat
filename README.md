@@ -6,8 +6,8 @@ I developed this small project to continue my experiences of different code inje
 With Thread hijacking, it allows the hijacker.exe program to susepend a thread within the target.exe program
 allowing us to write shellcode to that target thread, and later be executed (via; WriteProcessMemory(), SetThreadContext(), ResumeThread(), CreateThread()).
 
-### Credits to Endgame for Example GIF
-![alt text](https://www.endgame.com/sites/default/files/threadexecution_.gif)
+### Example GIF (Credits To Endgame)
+![alt text](https://1.bp.blogspot.com/-pQCXPk6NBB8/XZU5iLWXOFI/AAAAAAAAQf4/2YjvCImtlqAqyhPKL6_ea1GnXJYNiSIwACNcBGAsYHQ/s640/ThreadBoat_1.gif)
 
 ## Usage
 ```cpp
@@ -32,6 +32,9 @@ int main()
 	return 0;
 }
 ```
+## For Further Information On Thread Execution Hijacking 
+#### Click On The Link Below
+https://capec.mitre.org/data/definitions/30.html
 
 ## Environment
 - Windows Vista+ 
@@ -42,3 +45,7 @@ int main()
   - kernel32.dll
 
 - ntdll.dll
+
+## Ethical Notice
+This code was simply written to demonstrate an overlooked method to inject shellcode or a DLL into a Win32 program. This code is not to be used for malicous purposes. The author, Josh Schiavone, is not liable for misuse of this software. May God bless you all.
+
